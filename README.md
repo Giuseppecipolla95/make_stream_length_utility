@@ -1,4 +1,4 @@
-# Test of stream length utility
+# Tests of stream length utility
 #This code consists of a few tests made up to verify that the stream_length_utility works as expected.
 #Test 1: Flow accumulation and direction calculated on a regular grid using the FlowRouter component with D4 method.
 
