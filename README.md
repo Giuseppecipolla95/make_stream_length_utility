@@ -12,11 +12,6 @@ from nose.tools import assert_equal
 
 mg = RasterModelGrid((5, 4), spacing=(1, 1))
 z = np.array ([[0,0,0,0],[0,21,10,0],[0,31,20,0],[0,32,30,0],[0,0,0,0]],dtype='float64')
-#z = np.array ([0.,  0.,  0., 0.,
-#             ...0., 21., 10., 0.,
-#             ...0., 31., 20., 0.,
-#             ...0., 32., 30., 0.,
-#            ...0.,  0.,  0., 0.])
 _ = mg.add_field('node','topographic__elevation', z)
 figure(); imshow_grid(mg,mg['node']['topographic__elevation'])
 
